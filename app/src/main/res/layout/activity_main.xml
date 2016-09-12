@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3f3"
+    tools:context="com.terry.app.puzzlegame.MainActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/count"
+        android:textColor="@color/white"
+        android:background="@color/image_selector_status_bar"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <GridLayout
+        android:id="@+id/gl_main_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="3"></GridLayout>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+</LinearLayout>
